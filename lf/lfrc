@@ -1,0 +1,38 @@
+#Basic Settings
+set hidden true
+set drawbow true
+set icons true
+set preview true
+
+
+
+
+#Custom Functions
+cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
+cmd touch $touch "$(echo $* | tr ' ' '\ ')"
+cmd vim $vim "$(echo $* | tr ' ' '\ ')"
+
+cmd chmod ${{
+	printf "Mode Bits: "
+	read ans
+	
+	for file in "$fx"
+	do
+		chmod $ans $file
+	done
+	
+	lf -remote 'send reload'
+}}
+
+
+cmd open &{{
+    case $(file --mime-type -Lb $f) in
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+   # 	image/*) setsid -f sxiv $fx >/dev/null 2>&1 ;;
+   # 	application/pdf|application/vnd.djvu|application/epub*) setsid -f zathura $fx >/dev/null 2>&1 ;;
+        *) for f in $fx; do xdg-open $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+#Remaps
+map D delete
