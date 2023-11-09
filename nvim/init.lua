@@ -1,3 +1,2 @@
-require("a.core.options")
-require("a.core.keymaps")
-require("a.core.colorscheme")
+require("core.keymaps")
+require("core.options")
