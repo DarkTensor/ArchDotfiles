@@ -12,7 +12,7 @@ local options = {
 	relativenumber = true,			-- shows relative line number
 	splitbelow = true,					-- always splits below
 	splitright = true,					-- always vsplits to the right
-	background = "dark",				-- dark colors for syntax highlighting
+	background = "dark",				-- defaults to version of themes
 }
 
 for k,v in pairs(options) do
