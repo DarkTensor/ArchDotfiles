@@ -28,12 +28,16 @@ local plugins = {
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 	},
+	
 	-- Completion
-	"hrsh7th/nvim-cmp",
-	"hrsh7th/cmp-buffer",
-	"hrsh7th/cmp-path",
-	"hrsh7th/cmp-cmdline",
-  "saadparwaiz1/cmp_luasnip",
+	"hrsh7th/nvim-cmp",								--  main completion plugins 
+	"hrsh7th/cmp-buffer",							--  buffer completions
+	"hrsh7th/cmp-path",								--  path completions
+	"hrsh7th/cmp-cmdline",						--  cmdline completions
+  "saadparwaiz1/cmp_luasnip",				-- snippet completions
+	"hrsh7th/cmp-nvim-lsp",						-- LSP completions
+
+	-- snippet engine
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {"afamadriz/friendly-snippets"},
@@ -42,7 +46,13 @@ local plugins = {
 		-- install jsregexp (optional!).
 		build = "make install_jsregexp"
 	},
-	"rafamadriz/friendly-snippets"
+	"rafamadriz/friendly-snippets", -- a bunch of snippet
+
+	-- LSP
+	"williamboman/mason.nvim",				-- simple to use language server installer
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",					-- enables LSP	
+
 }
 
 -- required by lazy.nvim

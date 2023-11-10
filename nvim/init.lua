@@ -1,5 +1,13 @@
+-- Core
 require("core.keymaps")
 require("core.options")
 require("core.plugins")
-require("pluginconfigs.cmp")
 require("core.colorscheme")
+
+
+-- Plugin Configs
+require("pluginconfigs.cmp")
+
+
+-- LSP
+require("lsp")				
