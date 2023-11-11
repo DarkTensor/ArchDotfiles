@@ -6,7 +6,7 @@ require("core.colorscheme")
 
 
 -- Plugin Configs
-require("pluginconfigs.cmp")
+require("plugin-configs.cmp")
 
 
 -- LSP

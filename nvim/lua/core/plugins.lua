@@ -55,5 +55,15 @@ local plugins = {
 
 }
 
+-- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --
+-- full list of options available at lazy.nvim github page configuration section: 
+-- https://github.com/folke/lazy.nvim#%EF%B8%8F-configuration 
+local opts = {
+	ui = {
+		border = "rounded",
+	},
+
+}
+
 -- required by lazy.nvim
-require("lazy").setup(plugins, {})
+require("lazy").setup(plugins, opts)
