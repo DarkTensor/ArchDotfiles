@@ -59,6 +59,12 @@ local plugins = {
 		tag = "0.1.4",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+
+	-- Treesitter
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+	},
 }
 
 -- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --
