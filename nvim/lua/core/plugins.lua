@@ -53,6 +53,12 @@ local plugins = {
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",					-- enables LSP	
 
+	-- Telescope (fuzzy finder)
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.4",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 }
 
 -- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --

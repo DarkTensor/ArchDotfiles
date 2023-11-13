@@ -68,3 +68,6 @@ keymap('x', 'gy', '"+y', opts)
 -- paste to system clipboard
 keymap('x', 'gp', '"+p', opts)
 
+----------------------- TELESCOPE ----------------------------
+keymap('n', '<leader>f', ':Telescope find_files<cr>' , opts)
+keymap('n', '<leader>gs', ':Telescope grep_string<cr>' , opts)
