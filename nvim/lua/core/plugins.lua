@@ -65,6 +65,8 @@ local plugins = {
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 	},
+	-- Autopairs plugin (auto close (), {}, "", etc)
+	"windwp/nvim-autopairs",
 }
 
 -- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --
