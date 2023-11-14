@@ -9,6 +9,7 @@ require("core.colorscheme")							-- Colorscheme config file
 require("plugin-configs.cmp")						-- Completion config
 require("plugin-configs.telescope")			-- Telescope config
 require("plugin-configs.treesitter")		-- Treesitter config
+require("plugin-configs.autopairs")			-- Autopairs config
 
 
 -- LSP
