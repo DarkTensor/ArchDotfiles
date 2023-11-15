@@ -67,6 +67,15 @@ local plugins = {
 	},
 	-- Autopairs plugin (auto close (), {}, "", etc)
 	"windwp/nvim-autopairs",
+	-- Git decorations (colored bars on the left side of the file that track git changes)
+	"lewis6991/gitsigns.nvim",
+	-- NvimTree
+	{
+		"nvim-tree/nvim-tree.lua",
+		version = '*',
+		lazy = false,
+		dependencies = {"nvim-tree/nvim-web-devicons"},
+	},
 }
 
 -- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --

@@ -10,6 +10,8 @@ require("plugin-configs.cmp")						-- Completion config
 require("plugin-configs.telescope")			-- Telescope config
 require("plugin-configs.treesitter")		-- Treesitter config
 require("plugin-configs.autopairs")			-- Autopairs config
+require("plugin-configs.gitsigns")			-- Gitsigns config
+require("plugin-configs.nvimtree")			-- Nvimtree config
 
 
 -- LSP
