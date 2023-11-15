@@ -77,10 +77,17 @@ local plugins = {
 		dependencies = {"nvim-tree/nvim-web-devicons"},
 	},
 	-- Bufferline (tabs)
-	{"akinsho/bufferline.nvim", 
+	{
+		"akinsho/bufferline.nvim", 
 		version = "*", 
 		dependencies = 'nvim-tree/nvim-web-devicons'
 	},
+	-- Toggleterm
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		config = true,
+	}
 }
 
 -- THIS TABLE VARIABLE IS WHERE ALL THE OPTIONS GO --

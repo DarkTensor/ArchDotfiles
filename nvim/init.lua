@@ -13,6 +13,7 @@ require("plugin-configs.autopairs")			-- Autopairs config
 require("plugin-configs.gitsigns")			-- Gitsigns config
 require("plugin-configs.nvimtree")			-- Nvimtree config
 require("plugin-configs.bufferline")		-- Bufferline config
+require("plugin-configs.toggleterm")		-- Toggleterm config
 
 
 -- LSP
