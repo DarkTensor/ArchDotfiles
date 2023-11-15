@@ -13,6 +13,7 @@ local options = {
 	splitbelow = true,					-- always splits below
 	splitright = true,					-- always vsplits to the right
 	background = "dark",				-- defaults to version of themes
+	termguicolors = true,				-- sets colors. used for many other plugins
 }
 
 for k,v in pairs(options) do

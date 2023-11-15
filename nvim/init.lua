@@ -12,6 +12,7 @@ require("plugin-configs.treesitter")		-- Treesitter config
 require("plugin-configs.autopairs")			-- Autopairs config
 require("plugin-configs.gitsigns")			-- Gitsigns config
 require("plugin-configs.nvimtree")			-- Nvimtree config
+require("plugin-configs.bufferline")		-- Bufferline config
 
 
 -- LSP
